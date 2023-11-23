@@ -1,0 +1,39 @@
+.EnTete {
+    text-align: center;
+}
+
+.container {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.ImageChambre {
+    width: 350px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.PrixChambre{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.TextChambre{
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+
+
+.ListeChambre {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Espace {
+    height: 0px;
+}
