@@ -1,0 +1,101 @@
+*,*::before,::after{
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style:none;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+header{
+    height:25vh;
+    width: 100vw;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(fondneptune.jpg);
+    background-size: cover;
+}
+
+.navbar{
+    position:absolute;
+    padding:40px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    background:linear-gradient( rgb(221, 255, 255),rgb(230,255,255),rgb(235,255,255));
+    box-sizing: border-box;
+
+}
+.navbar a {
+    color:black;
+}
+
+.navbar .lien-nav ul{
+    display: flex;
+}
+
+.navbar .lien-nav ul li{
+    margin:0 30px;
+    font-weight: bold;
+}
+.navbar .lien-nav ul li.select a{
+    color:blue;
+    display:flex;
+    padding-bottom:3px;
+    border-bottom:solid 3px ;
+    border-color: blue;
+}
+.boxinscription{
+    display:flex;
+    border:solid 0.5px ;
+    border-color: rgb(68, 68, 68) ;
+    border-radius: 8px;
+    padding: 10px;
+    background:linear-gradient( rgb(221, 255, 255),rgb(230,255,255),rgb(235,255,255));
+    flex-direction: column;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;   
+}
+
+.boxinscription>input{
+    margin:5px;
+    padding:5px 5px 5px 10px;
+    border-radius: 5px;
+    border:solid 0.5px;
+}
+.boxinscription>input:focus{
+    outline: solid 2px  rgb(175, 207, 250);
+    border:none;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+}
+.text-center{
+    text-align: center;
+}
+#Connexion{
+    border-radius:5px;
+    border:solid 1.5px;
+    margin-top:10px;
+    padding:2px;
+    width:30%;
+    background-color:rgb(161, 227, 253);
+}
+#Connexion:hover{
+    background-color:rgb(182, 227, 253);
+    text-decoration: underline  blue;
+}
+
+
