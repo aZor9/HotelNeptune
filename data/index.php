@@ -2,7 +2,7 @@
 <title>ACCEUIL</title>
 
 <head>
-    <link rel="stylesheet" href="Page d'Acceuil.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap"
@@ -66,7 +66,7 @@
                         <div class="text">
                             <h1>Hébergement de Luxe</h1>
                             <p>
-                                <a href="Nos chambres.php" style="color:blue;">Nos chambres</a> et suites somptueuses sont conçues pour vous offrir le summum du confort.
+                                <a href="chambres.php" style="color:blue;">Nos chambres</a> et suites somptueuses sont conçues pour vous offrir le summum du confort.
                                 <br>
                                 Des installations modernes et des touches de luxe s'associent pour créer un espace
                                 intime où
@@ -144,7 +144,7 @@
                 </p>
             </div>
             <div>
-                <a href="Nos chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
+                <a href="chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
             </div>
         </div>
     </main>

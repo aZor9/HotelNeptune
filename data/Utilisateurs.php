@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <title>Utilisateurs</title>
-<link rel="stylesheet" href="Utilisateurs.css">
+<link rel="stylesheet" href="utilisateurs.css">
 <header>
 <?php
     include ('navbar.php');

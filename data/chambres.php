@@ -3,7 +3,7 @@
 <html>
 <title>Nos Chambres</title>
 <head>
-<link rel="stylesheet" href="Nos chambres.css">
+<link rel="stylesheet" href="chambres.css">
 
 </head>
 <header>

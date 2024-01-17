@@ -24,9 +24,9 @@
         </div>
         <div class="lien-nav">
             <ul>
-                <li><a href="Page d'Acceuil.php">ACCEUIL</a></li>
-                <li><a href="Nos chambres.php">CHAMBRES</a></li>
-                <li id="lien-droite"><a href="Utilisateurs.php">UTILISATEURS</a></li>
+                <li><a href="index.php">ACCEUIL</a></li>
+                <li><a href="chambres.php">CHAMBRES</a></li>
+                <li id="lien-droite"><a href="utilisateurs.php">UTILISATEURS</a></li>
             </ul>
         </div>
         <div class="nav-menu">
