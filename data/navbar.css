@@ -1,3 +1,4 @@
+
 *,
 *::before,
 ::after {
@@ -9,7 +10,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Josefin sans', sans-serif;
     max-width: 100vw;
 }
 
@@ -23,18 +24,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background: linear-gradient(rgb(221, 255, 255), rgb(230, 255, 255), rgb(235, 255, 255));
     box-sizing: none;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.5);
 }
 
 #lien-droite {
-    padding-right: 120px;
+    padding-right: 90px;
 }
 
 .navbar a {
     color: black;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .navbar .lien-nav ul {
@@ -45,7 +49,7 @@ header {
 .navbar .lien-nav ul li {
     display: flex;
     margin: 0 30px;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 .navbar .lien-nav ul li a {
@@ -55,7 +59,7 @@ header {
 
 .navbar .lien-nav ul li:hover a {
     color: rgb(5, 0, 137);
-    border-bottom:solid 3px rgb(5, 0, 137);
+    border-bottom:solid  rgb(5, 0, 137);
 }
 
 .nav-logo {
@@ -65,19 +69,19 @@ header {
 
 #neptuneicone {
     display: flex;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     margin: 0 10px;
 }
 
 #textlogo {
     display: flex;
-    font-weight: bold;
-    font-size: 18px;
-    color: blue;
+    font-family: "Josefin sans";
+    font-size: 25px;
+    color: rgb(23, 209, 85);
     align-items: center;
     border-bottom: solid 3px;
-    border-color: blue;
+    border-color: rgb(255, 51, 0);
 }
 
 
@@ -105,7 +109,7 @@ header {
 .nav-menu ul li ul li {
     display: block;
     background-color: rgb(235, 255, 255);
-    font-weight: normal;
+    font-weight: 300;
     color: black;
     padding: 5px;
     padding-right: 1px;
