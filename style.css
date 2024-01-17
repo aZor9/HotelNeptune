@@ -1,0 +1,102 @@
+.EnTete {
+    text-align: center;
+}
+
+.container {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ImageChambre {
+    width: 350px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+.PrixChambre{
+    font-weight: bold;
+}
+
+.TextChambre{
+    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.ListeChambre {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Espace {
+    height: 0px;
+}
+
+.ImageChambre0 {
+    display: flex;
+    margin-left: 20%;
+    /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+.ImageChambre1 {
+    width: 50%;
+    margin: 8px;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.DoubleImage {
+    display: flex;
+    flex-direction: column;
+}
+
+.ImageChambre2 {
+    width: 50%;
+    margin: 8px;
+    border-radius: 0px 30px 0px 0px;
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.8);
+}
+.ImageChambre3 {
+    width: 50%;
+    border-radius: 0px 0px 30px 0px;
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.8);
+    margin: 8px;
+}
+
+
+.InformationChambre,th {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.InformationChambre,th:first-child {
+    text-align: right;
+}
+
+.InformationChambre,th:last-child {
+    font-style: italic;
+    text-align: left;
+}
+
+.InformationChambre {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 10px;
+    font-style:normal;
+    font-weight: normal;
+}
+
+
