@@ -53,13 +53,13 @@ header {
 }
 
 .navbar .lien-nav ul li a {
-    color: black;
+    color: pink;
     transition: 0.1s;
 }
 
 .navbar .lien-nav ul li:hover a {
-    color: rgb(5, 0, 137);
-    border-bottom:solid  rgb(5, 0, 137);
+    color: rgb(0, 0, 0);
+    border-bottom:solid  rgb(0, 0, 0);
 }
 
 .nav-logo {
@@ -78,10 +78,10 @@ header {
     display: flex;
     font-family: "Josefin sans";
     font-size: 25px;
-    color: rgb(23, 209, 85);
+    color: rgb(0, 0, 0);
     align-items: center;
     border-bottom: solid 3px;
-    border-color: rgb(255, 51, 0);
+    border-color: rgb(0, 0, 0);
 }
 
 
@@ -92,7 +92,7 @@ header {
 }
 
 .nav-menu ul li:hover * {
-    color: blue;
+    color: rgb(0, 0, 0);
 }
 
 .nav-menu ul li ul {

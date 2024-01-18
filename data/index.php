@@ -11,14 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
+
+<div class="test">
 <header>
 <?php
     include ('navbar.php');
 ?>
+</div>
 </header>
 
 <body>
     <main>
+    
         <div class=HP>
             <div class="BHN">
                 <img src="/image/HotelBHN.jpg" alt="Hôtel Neptune photo" id="HotelBHN">

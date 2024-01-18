@@ -13,11 +13,12 @@
     max-width: 100vw;
 }
 
+
+
  body {
 
     height: 100vh;
     width: 100%;
-    background-image: url(/image/neptuneciel.jpg);
     margin-left: auto;
     margin-right: auto
 
@@ -339,4 +340,13 @@ h1 {
     color: blue;
     border-bottom: solid 3px blue;
     border-top: solid 3px transparent ;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/neptunecielv2.jpg);
+    background-size: cover;
 }
