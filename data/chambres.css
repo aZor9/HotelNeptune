@@ -1,20 +1,18 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    background-image: url(fondneptune.jpg);
-    background-size: cover;
+body {
+  height: 100svh;
+  width: 100%;
 }
 
 .navbar .lien-nav ul li:nth-child(2) a {
-    display: flex;
-    color: blue;
-    border-bottom: solid 3px blue;
-    border-top: solid 3px transparent ;
+  display: flex;
+  color: blue;
+  border-bottom: solid 3px blue;
+  border-top: solid 3px transparent;
 }

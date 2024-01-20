@@ -21,11 +21,11 @@
 </header>
 
 <body>
-    <main>
     
-        <div class=HP>
+    
+        <div class="HP">
             <div class="BHN">
-                <img src="/image/HotelBHN.jpg" alt="Hôtel Neptune photo" id="HotelBHN">
+                <img src="../image/HotelBHN.jpg" alt="Hôtel Neptune photo" id="HotelBHN">
                 <div class="text">
                     <h1>Bienvenue à l'Hôtel Neptune</h1>
                     <p>
@@ -43,7 +43,7 @@
             <div class="displayfr">
                 <div class="CP">
                     <div id="HotelCP">
-                        <img src="/image/HotelCP.jpeg" alt="Vu de l'Hôtel">
+                        <img src="../image/HotelCP.jpeg" alt="Vu de l'Hôtel">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -64,7 +64,7 @@
                 </div>
                 <div class="HL">
                     <div id="HotelHL">
-                        <img src="/image/HotelHL.jpeg" alt="Photo Hôtel salle à manger">
+                        <img src="../image/HotelHL.jpeg" alt="Photo Hôtel salle à manger">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -87,7 +87,7 @@
             <div class="displayfr">
                 <div class="GR">
                     <div id="HotelGR">
-                        <img src="/image/HotelGR.jpeg" alt="Gastronomie de l'Hôtel">
+                        <img src="../image/HotelGR.jpeg" alt="Gastronomie de l'Hôtel">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -107,7 +107,7 @@
                 </div>
                 <div class="BED">
                     <div id="HotelBED">
-                        <img src="/image/HotelBED.jpeg" alt="Espace détente de l'Hôtel">
+                        <img src="../image/HotelBED.jpeg" alt="Espace détente de l'Hôtel">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -151,7 +151,7 @@
                 <a href="chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
             </div>
         </div>
-    </main>
+   
 
 </body>
 

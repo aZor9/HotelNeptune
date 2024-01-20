@@ -22,7 +22,7 @@
 <header>
     <nav class="navbar">
         <div class="nav-logo">
-            <img src="/image/neptuneicone.png" alt="logo hotel neptune" id="neptuneicone" />
+            <img src="../image/neptuneicone.png" alt="logo hotel neptune" id="neptuneicone" />
             <p id="textlogo">HOTEL NEPTUNE</p>
         </div>
         <div class="lien-nav">
