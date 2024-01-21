@@ -15,28 +15,39 @@
 
 <body>
     <div style="display:flex; justify-content: center; margin:30px 0;">
-        <div class="nav-menu">
-            <ul>
-                <li><a>MENU</a>
-                    <ul>
-                        <li></li>
-                        <li><a href="">je</a></li>
-                        <li><a>sais</a></li>
-                        <li><a>pas</a></li>
-                        <li><a>quoi</a></li>
-                        <li><a>mettre</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+    <div class="menu">
+    <ul>
+        <form method="post">
+            <li><a>TRIER</a></li>
+            <li><input type="submit" value="PRIX" name="prix" ></li>
+            <li><input type="submit" value="CAPACITE" name = "capacite" ></li>
+            <li><input type="submit" value="SURFACE" name= "surface" ></li>
+
+        </form>
+    </ul>
+</div>
     </div>
     <br>
     <div style="display:flex; flex-direction:row;">
         <?php
 
-$query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY prix ASC");
-$rooms = $query->fetchAll(PDO::FETCH_ASSOC);
 
+    $action = $_POST["action"];
+
+if (isset($_POST["prix"])) {
+    $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY prix ASC");
+} 
+elseif (isset($_POST["capacite"])) {
+    $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY nb_personne ASC");
+} 
+elseif (isset($_POST["surface"])) {
+    $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY surface ASC");
+} 
+else {
+    $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ");
+}
+
+$rooms = $query->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($rooms as $room) {
     echo ('
