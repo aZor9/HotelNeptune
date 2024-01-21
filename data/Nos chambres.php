@@ -17,11 +17,13 @@
     <div style="display:flex; justify-content: center; margin:30px 0;">
         <div class="nav-menu">
             <ul>
-                <li><a>MENU</a>
+                <li><a>FILTRE</a>
                     <ul>
                         <li></li>
                         <li><a href="">je</a></li>
-                        <li><a>sais</a></li>
+                        <li><!--<script>setInterval(function(<?php /*$query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY prix DESC");
+$rooms = $query->fetchAll(PDO::FETCH_ASSOC); */ ?> ){window.location.reload();}, 5000); 
+                        </script>--><a >sais</a></li>
                         <li><a>pas</a></li>
                         <li><a>quoi</a></li>
                         <li><a>mettre</a></li>
@@ -31,7 +33,7 @@
         </div>
     </div>
     <br>
-    <div style="display:flex; flex-direction:row;">
+    <div style="display:flex; flex-direction:row; flex-wrap: wrap;">
         <?php
 
 $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY prix ASC");
@@ -48,7 +50,9 @@ foreach ($rooms as $room) {
         <br>
         Prix : '. $room['prix'] .' € par nuit
         <br>
-        Nombre de personnes : ' . $room['nb_personne'] . '
+        Nombre de lit simple : ' . $room['nb_lit_simple'] . '
+        <br>
+        Nombre de lit double : ' . $room['nb_lit_double'] . '
     </div>  <br><br>');
 } 
 

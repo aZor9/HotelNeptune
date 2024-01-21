@@ -35,12 +35,13 @@ $query=getDB()->query("CREATE TABLE IF NOT EXISTS room(
     `num_chambre` integer(100) NOT NULL, 
     `surface` integer(100) NOT NULL,
     `prix`  integer(100) NOT NULL ,
-    `nb_personne` varchar(100) NOT NULL,
+    `nb_lit_simple` varchar(100),
+    `nb_lit_double` varchar(100),
     'disponible' BOOLEAN
     )
 ");
 
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, disponible) VALUES('101', '13', '150', '2', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, disponible) VALUES('102', '20', '200', '2', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, disponible) VALUES('201', '30', '300', '4', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, disponible) VALUES('103', '15', '120', '1', '1')");
+$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_lit_simple, nb_lit_double, disponible) VALUES('101', '13', '150', '2','0', '1')");
+$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_lit_simple, nb_lit_double, disponible) VALUES('102', '20', '200', '1','1', '1')");
+$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_lit_simple, nb_lit_double, disponible) VALUES('201', '30', '300', '2','2', '1')");
+$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_lit_simple, nb_lit_double, disponible) VALUES('103', '15', '120', '1','0', '1')");

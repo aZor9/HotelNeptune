@@ -29,51 +29,8 @@ body {
     background: linear-gradient(rgb(221, 255, 255), rgb(230, 255, 255), rgb(235, 255, 255));
     flex-direction: column;
     justify-content: center;
+    margin : min(5px);
     margin-left: auto;
     margin-right: auto;
     width: 300px;
-}
-
-
-.nav-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-menu ul li {
-    position: relative;
-    display: flex; 
-    font-weight: bold;
-    color: black;
-}
-
-.nav-menu ul li:hover * {
-    color: blue;
-}
-
-.nav-menu ul li ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-}
-
-.nav-menu ul li:hover ul {
-    display: block; /* Afficher le menu déroulant au survol */
-    margin-top: 0;
-    margin-left: 20px;
-}
-
-.nav-menu ul li ul li {
-    display: block;
-    background-color: rgb(235, 255, 255);
-    font-weight: normal;
-    color: black;
-    padding: 5px;
-    padding-right: 1px;
-}
-
-.nav-menu ul li ul li:hover:not(:nth-child(1)) {
-    background-color: rgb(154, 206, 255);
-    transition: 0.75s;
 }
