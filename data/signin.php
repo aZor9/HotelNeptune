@@ -17,7 +17,6 @@ $query = getDB()->query("SELECT mail FROM 'user'");
 $emails = $query->fetchAll(PDO::FETCH_COLUMN);
 // echo 'Les mails : ' . implode(', ', $emails);
 foreach ($emails as $email){
-    echo($mail);
     if ($mail==$email){
         header('Location:/data/Utilisateurs.php?error=errormail');
         exit; 
