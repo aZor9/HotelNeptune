@@ -14,6 +14,22 @@
 </header>
 
 <body>
+    <div style="display:flex; justify-content: center; margin:30px 0;">
+        <div class="nav-menu">
+            <ul>
+                <li><a>MENU</a>
+                    <ul>
+                        <li></li>
+                        <li><a href="">je</a></li>
+                        <li><a>sais</a></li>
+                        <li><a>pas</a></li>
+                        <li><a>quoi</a></li>
+                        <li><a>mettre</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <br>
     <div style="display:flex; flex-direction:row;">
         <?php
