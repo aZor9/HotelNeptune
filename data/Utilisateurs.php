@@ -12,6 +12,10 @@
     {
         echo '<div class="error">Erreur : Mail déja existant </div>';
     }
+    if($_GET['good'] == "connexion")
+    {
+        echo '<div class="good">Connexion réussite : BIENVENUE</div>';
+    }
 ?>
 </header>
 
@@ -30,11 +34,18 @@
                 <div class="text-center">
                     <input type="submit" id="inscrire" value="S'inscrire">
                 </div>
-                <div class="row">
-                    <p>Vous avez un compte ?</p>
-                    <br>
-                    <a href="connexion.php" id="seconnecter">se connecter</a>
-                </div>
+                <?php
+                if (!$_SESSION['mail']){
+
+                    echo('
+                    <div class="row">
+                        <p>Vous avez un compte ?</p>
+                        <br>
+                        <a href="connexion.php" id="seconnecter">se connecter</a>
+                    </div>');
+                }
+                ?>
+                
             </div>
             </div>
         </form>

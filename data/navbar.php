@@ -26,14 +26,24 @@
             <ul>
                 <li><a href="Page d'Acceuil.php">ACCEUIL</a></li>
                 <li><a href="Nos chambres.php">CHAMBRES</a></li>
-                <li id="lien-droite"><a href="Utilisateurs.php">UTILISATEURS</a></li>
+                <li id="lien-droite">
+                    <?php 
+                    session_start(); 
+                    if ($_SESSION['mail']){
+                        echo ('<a href="account.php">MON COMPTE</a></li>');
+                    }
+                    else {
+                        echo('<a href="Utilisateurs.php">UTILISATEURS</a></li>');
+                    }
+                    ?>
             </ul>
         </div>
         <div class="nav-menu">
             <ul>
                 <li><a>MENU</a>
                     <ul>
-                        <li><a>je</a></li>
+                        <li></li>
+                        <li><a href="unconnect.php">deco</a></li>
                         <li><a>sais</a></li>
                         <li><a>pas</a></li>
                         <li><a>quoi</a></li>

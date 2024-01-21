@@ -12,10 +12,11 @@
 }
 
 body {
+
     height: 100vh;
     width: 100%;
-    background-image: url(image/fondneptune.jpg);
-    background-size: cover;
+    background-color: rgb(39, 39, 39);
+
 }
 
 .row {
@@ -23,10 +24,12 @@ body {
     flex-direction: row;
     font-size: 13px;
 }
+
 .row a {
     position: absolute;
     padding-left: 150px;
 }
+
 .boxinscription {
     display: flex;
     border: solid 0.5px;
@@ -69,6 +72,14 @@ div.error {
     margin: 30px 0;
 }
 
+div.good {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 140, 255);
+    margin: 30px 0;
+}
+
 .text-center {
     text-align: center;
 }
@@ -100,9 +111,10 @@ div.error {
     color: rgba(0, 64, 255, 0.756);
     font-size: 101%;
 }
+
 .navbar .lien-nav ul li:nth-child(3) a {
     display: flex;
     color: blue;
     border-bottom: solid 3px blue;
-    border-top: solid 3px transparent ;
+    border-top: solid 3px transparent;
 }

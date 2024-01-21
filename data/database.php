@@ -20,15 +20,8 @@ $query=getDB()->query("CREATE TABLE IF NOT EXISTS user(
     )
 ");
 
-// $query = getDB()->query("INSERT INTO user (nom, prenom, mail, password) VALUES('Gougis', 'Aurélien', 'aurelien@gmail.com', 'password')");
-// $mail="aurelien@gmail.com";
-// $query = getDB()->query("SELECT mail FROM 'user'");
-// $emails = $query->fetchAll(PDO::FETCH_COLUMN);
-// foreach ($emails as $email){
-//     if ($mail==$email){
-//         echo("error : ce mail est déja prit ".$mail);
-//         break; 
-//     }
-//} 
 
-$query = getDB()->query("INSERT INTO user (nom, prenom, mail, password) VALUES('Gougis', 'Aurélien', 'aurelien@gmail.com', 'password', '1')");
+
+$query = getDB()->query("INSERT INTO user (nom, prenom, mail, password, admin) VALUES('Gougis', 'Aurélien', 'aurelien@gmail.com', 'password', '0')");
+$query = getDB()->query("INSERT INTO user (nom, prenom, mail, password, admin) VALUES('admin', 'admin', 'admin@gmail.com', 'admin', '1')");
+
