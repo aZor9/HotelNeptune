@@ -44,6 +44,7 @@
                     <ul>
                         <li></li>
                         <li><a href="unconnect.php">deco</a></li>
+                        <li><a href="add_room.php">+room</a></li>
                         <li><a>sais</a></li>
                         <li><a>pas</a></li>
                         <li><a>quoi</a></li>

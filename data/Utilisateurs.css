@@ -51,6 +51,14 @@ body {
     border: solid 0.5px;
 }
 
+.boxinscription>.btn_radio {
+    margin: 5px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    border: solid 0.5px;
+    background-color: white;
+}
+
 .boxinscription>input:focus {
     outline: solid 2px rgb(175, 207, 250);
     border: none;
