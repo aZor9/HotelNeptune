@@ -41,7 +41,7 @@
                                 </div>
                             </label>
                             <label>
-                                <li><input type="submit" value="VALIDER"></li>
+                                <li style="text-align:center;"><input type="submit" value="VALIDER"></li>
                             </label>
                         </form>
                     </ul>
@@ -69,7 +69,7 @@
                                 </div>
                             </label>
                             <label>
-                                <li><input type="submit" value="VALIDER"></li>
+                                <li style="text-align:center;"><input type="submit" value="VALIDER" ></li>
                             </label>
                         </form>
                     </ul>
@@ -79,8 +79,10 @@
         </div>
     </div>
     <br>
-    <div style="display:flex; flex-direction:row;">
+    <div style="display:flex; flex-direction:row; flex-wrap: wrap;" >
         <?php
+
+        $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY num_chambre ASC");
 
         if (isset($_POST["prix"])) {
             $choix = $_POST["prix"];
@@ -97,7 +99,7 @@
                 $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND prix > $prixX ORDER BY prix ASC");
             }
         }
-        elseif (isset($_POST["capacite"])) {
+        if (isset($_POST["capacite"])) {
             $choix = $_POST["capacite"];
 
             if ($choix == "CAP") {
@@ -106,10 +108,10 @@
                 $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY nb_personne DESC");
             } elseif ($choix == "Xcap") {
                 $Xcap = $_POST["Xcap"];
-                $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND nb_personne < $Xcap ORDER BY prix ASC");
+                $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND nb_personne < $Xcap ORDER BY nb_personne ASC");
             } elseif ($choix == "capX") {
                 $cap = $_POST["capX"];
-                $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND nb_personne > $cap ORDER BY prix ASC");
+                $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND nb_personne > $cap ORDER BY nb_personne ASC");
             }
         }
 
@@ -126,6 +128,10 @@
                 Prix : ' . $room['prix'] . ' € par nuit
                 <br>
                 Nombre de personnes : ' . $room['nb_personne'] . '
+                <br>
+                Nombre de lit double : ' . $room['nb_lit_double'] . '
+                <br>
+                Nombre de lit simple : ' . $room['nb_lit_simple'] . '
             </div>  
             <br><br>');
         }
