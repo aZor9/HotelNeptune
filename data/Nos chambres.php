@@ -17,7 +17,7 @@
     <div style="display:flex; justify-content: center; margin:30px 0;">
         <div class="menu">
             <ul>
-                <li><a>TRIER</a></li>
+                <li><a>TRIER : </a></li>
                 <li class="dropdown">
                     <a>PRIX</a>
                     <ul class="dropdown-content">
@@ -31,13 +31,13 @@
                             <label>
                                 <div style="display:flex;">
                                     <li><input type="radio" name="prix" value="Xprix"></li>
-                                    <li><input type="text" placeholder="X>prix / X=?" name="Xprix"></li>
+                                    <li  style="display:flex;"><p style="padding-right:5px;" >Max </p><input type="text" placeholder="X>prix / X=?" name="Xprix"></li>
                                 </div>
                             </label>
                             <label>
                                 <div style="display:flex;">
                                     <li><input type="radio" name="prix" value="prixX"></li>
-                                    <li><input type="text" placeholder="X<prix / X=?" name="prixX"></li>
+                                    <li  style="display:flex;"><p style="padding-right:5px;" >Min </p><input type="text" placeholder="X<prix / X=?" name="prixX"></li>
                                 </div>
                             </label>
                             <label>
@@ -59,13 +59,13 @@
                             <label>
                                 <div style="display:flex;">
                                     <li><input type="radio" name="capacite" value="Xcap"></li>
-                                    <li><input type="text" placeholder="X>cap / X=?" name="Xcap"></li>
+                                    <li  style="display:flex;"><p style="padding-right:5px;" >Max </p><input type="text" placeholder="X>cap / X=?" name="Xcap"></li>
                                 </div>
                             </label>
                             <label>
                                 <div style="display:flex;">
                                     <li><input type="radio" name="capacite" value="capX"></li>
-                                    <li><input type="text" placeholder="X<prix / X=?" name="capX"></li>
+                                    <li  style="display:flex;"><p style="padding-right:5px;" >Min </p><input type="text" placeholder="X<prix / X=?" name="capX"></li>
                                 </div>
                             </label>
                             <label>
