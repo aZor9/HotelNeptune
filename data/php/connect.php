@@ -3,12 +3,8 @@
 $mail = $_POST['mail'];
 $password = $_POST['pwd'];
 
-
-// Récupération des données postées
-// $mail = "aurelien@gmail.com";
-// $password = "password"; 
-
-include ('database.php');
+ 
+include ('../php/database.php');
 
 
 $query = getDB()->prepare("SELECT * FROM user WHERE mail = :mail AND password = :password");
@@ -40,7 +36,7 @@ if ($userData) {
     $_SESSION['Nom']=$nom['nom'];
     $_SESSION['Prenom']=$prenom['prenom'];
 
-    // regarde si l'utilsateur renseigné est de grade admin si oui lui actif c'est permition 
+    // regarde si l'utilsateur renseigné est de grade admin si oui lui active ses permitions 
 
     
     $query = getDB()->prepare("SELECT admin FROM user WHERE mail = :mail AND password = :password");
@@ -53,10 +49,10 @@ if ($userData) {
         $_SESSION['admin']=true;
     }
         
-    header('Location:/data/connexion.php?good=identification');
+    header('Location:/data/php/connexion.php?good=identification');
 
 } else {
-    header('Location:/data/connexion.php?error=identification');
+    header('Location:/data/php/connexion.php?error=identification');
     exit; 
 }
 ?>

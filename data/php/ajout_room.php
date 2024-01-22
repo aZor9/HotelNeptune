@@ -1,5 +1,8 @@
 <?php  
 
+session_start();
+
+
 $num_chambre = $_POST['num_chambre'];
 $surface = $_POST['surface'];
 $prix = $_POST['prix'];
@@ -11,7 +14,7 @@ if ($_POST['dispo'] == 'dispo') {
 else {
     $dispo = 0;}
 
-include ('database.php');
+include ('../php/database.php');
 
 
 
@@ -20,7 +23,7 @@ VALUES('$num_chambre', '$surface', '$prix', '$nb_personne', '$nb_lit_simple','$n
 
 
 
-header('Location:/data/add_room.php?Ajout-Reussi');
+header('Location:/data/php/add_room.php?Ajout-Reussi');
 exit;
 
 ?>

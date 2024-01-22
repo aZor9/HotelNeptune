@@ -6,10 +6,10 @@ $mail = $_POST['mail'];
 $password = $_POST['pwd'];
 $repassword = $_POST['repwd'];
 
-include ('database.php');
+include ('../php/database.php');
 
 if ($password!==$repassword){
-    header('Location:/data/Utilisateurs.php?error=errorpwd');
+    header('Location:/data/php/utilisateurs.php?error=errorpwd');
     exit;
 }
 
@@ -18,7 +18,7 @@ $emails = $query->fetchAll(PDO::FETCH_COLUMN);
 // echo 'Les mails : ' . implode(', ', $emails);
 foreach ($emails as $email){
     if ($mail==$email){
-        header('Location:/data/Utilisateurs.php?error=errormail');
+        header('Location:/data/php/utilisateurs.php?error=errormail');
         exit; 
     }
 } 
@@ -31,7 +31,7 @@ $_SESSION['mail']=$mail;
 $_SESSION['pwd']=$password;
 $_SESSION['Nom']=$nom;
 $_SESSION['Prenom']=$prenom;
-header('Location:/data/Utilisateurs.php?good=connexion');
+header('Location:/data/php/utilisateurs.php?good=connexion');
 exit;
 
 ?>

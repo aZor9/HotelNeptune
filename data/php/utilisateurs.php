@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <title>Utilisateurs</title>
-<link rel="stylesheet" href="Utilisateurs.css">
+<link rel="stylesheet" href="../css/Utilisateurs.css">
 <header>
 <?php
-    include ('navbar.php');
+    include ('../php/navbar.php');
+    session_start();
     if($_GET['error'] == "errorpwd")
     {
         echo '<div class="error">Erreur : mot de passe différent</div>';
@@ -24,7 +25,7 @@
         <br>
         <h1>SE CRÉER UN COMPTE</h1>
         <br>
-        <form action="./signin.php" method="post">
+        <form action="../php/signin.php" method="post">
             <div class="boxinscription" action="POST">
                 <input type="text " id="Nom" placeholder="Nom" name=nom required>
                 <input type="text " id="Prénom" placeholder="Prénom" name=prenom required>
@@ -41,7 +42,7 @@
                     <div class="row">
                         <p>Vous avez un compte ?</p>
                         <br>
-                        <a href="connexion.php" id="seconnecter">se connecter</a>
+                        <a href="/data/php/connexion.php" id="seconnecter">se connecter</a>
                     </div>');
                 }
                 ?>

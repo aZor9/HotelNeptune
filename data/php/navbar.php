@@ -1,4 +1,5 @@
 <?php
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -6,7 +7,7 @@
 <title>ACCEUIL</title>
 
 <head>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap"
@@ -24,18 +25,40 @@
         </div>
         <div class="lien-nav">
             <ul>
-                <li><a href="Page d'Acceuil.php">ACCEUIL</a></li>
-                <li><a href="Nos chambres.php">CHAMBRES</a></li>
-                <li id="lien-droite">
-                    <?php 
-                    session_start(); 
+                <li><a href="/index.php">ACCEUIL</a></li>
+                <li><a href="../php/chambres.php">CHAMBRES</a></li>
+                <li
+                    <?php
+                        if ($_SESSION['admin']!==true){
+                            echo ('id="lien-droite"');
+                        }
+                    ?>
+                >
+                    <?php  
                     if ($_SESSION['mail']){
-                        echo ('<a href="account.php">MON COMPTE</a></li>');
+                        echo ('<a href="../php/account.php">MON COMPTE</a></li>');
                     }
                     else {
-                        echo('<a href="Utilisateurs.php">UTILISATEURS</a></li>');
+                        echo('<a href="../php/utilisateurs.php">UTILISATEURS</a></li>');
                     }
                     ?>
+                </li>
+                <li 
+                    <?php
+                        if ($_SESSION['admin']==true){
+                            echo ('id="lien-droite"');
+                        }
+                        else {
+                            echo('style="display:none;"');
+                        }
+                    ?>
+                >
+                    <?php
+                        if ($_SESSION['admin']==true){
+                            echo ('<a href="../php/admin.php">ADMIN</a>');
+                        }
+                    ?>
+                </li>
             </ul>
         </div>
         <div class="nav-menu">
@@ -43,8 +66,8 @@
                 <li><a>MENU</a>
                     <ul>
                         <li></li>
-                        <li><a href="unconnect.php">deco</a></li>
-                        <li><a href="add_room.php">+room</a></li>
+                        <li><a href="../php/unconnect.php">deco</a></li>
+                        <li><a>je</a></li>
                         <li><a>sais</a></li>
                         <li><a>pas</a></li>
                         <li><a>quoi</a></li>

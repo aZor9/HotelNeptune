@@ -3,13 +3,13 @@
 <title>Ajout de chambre</title>
 
 <head>
-    <link rel="stylesheet" href="Utilisateurs.css">
+    <link rel="stylesheet" href="../css/utilisateurs.css">
 </head>
 
 <header>
     <?php
-    include('navbar.php');
-    include('database.php');
+    include('../php/navbar.php');
+    include('../php/database.php');
     ?>
 </header>
 
@@ -17,7 +17,7 @@
 <br>
     <h1>Ajouter une chambre</h1>
     <br>
-    <form action="./ajout_room.php" method="post">
+    <form action="../php/ajout_room.php" method="post">
         <div class="boxinscription" action="POST">
             <input type="smallint " id="num_chambre" placeholder="Numéro de chambre" name=nom_chambre required>
             <input type="smallint " id="surface" placeholder="Surface en m²" name=surface required>

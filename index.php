@@ -2,7 +2,7 @@
 <title>ACCEUIL</title>
 
 <head>
-    <link rel="stylesheet" href="Page d'Acceuil.css">
+    <link rel="stylesheet" href="../data/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap"
@@ -13,7 +13,7 @@
 </head>
 <header>
 <?php
-    include ('navbar.php');
+    include ('../data/php/navbar.php');
 ?>
 </header>
 
@@ -21,7 +21,7 @@
     <main>
         <div class=HP>
             <div class="BHN">
-                <img src="/image/HotelBHN.jpg" alt="Hôtel Neptune photo" id="HotelBHN">
+                <img src="/data/image/HotelBHN.jpg" alt="Hôtel Neptune photo" id="HotelBHN">
                 <div class="text">
                     <h1>Bienvenue à l'Hôtel Neptune</h1>
                     <p>
@@ -39,7 +39,7 @@
             <div class="displayfr">
                 <div class="CP">
                     <div id="HotelCP">
-                        <img src="/image/HotelCP.jpeg" alt="Vu de l'Hôtel">
+                        <img src="/data/image/HotelCP.jpeg" alt="Vu de l'Hôtel">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -60,13 +60,13 @@
                 </div>
                 <div class="HL">
                     <div id="HotelHL">
-                        <img src="/image/HotelHL.jpeg" alt="Photo Hôtel salle à manger">
+                        <img src="/data/image/HotelHL.jpeg" alt="Photo Hôtel salle à manger">
                     </div>
                     <div class="overlay">
                         <div class="text">
                             <h1>Hébergement de Luxe</h1>
                             <p>
-                                <a href="Nos chambres.php" style="color:blue;">Nos chambres</a> et suites somptueuses sont conçues pour vous offrir le summum du confort.
+                                Nos chambres et suites somptueuses sont conçues pour vous offrir le summum du confort.
                                 <br>
                                 Des installations modernes et des touches de luxe s'associent pour créer un espace
                                 intime où
@@ -83,7 +83,7 @@
             <div class="displayfr">
                 <div class="GR">
                     <div id="HotelGR">
-                        <img src="/image/HotelGR.jpeg" alt="Gastronomie de l'Hôtel">
+                        <img src="/data/image/HotelGR.jpeg" alt="Gastronomie de l'Hôtel">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -103,7 +103,7 @@
                 </div>
                 <div class="BED">
                     <div id="HotelBED">
-                        <img src="/image/HotelBED.jpeg" alt="Espace détente de l'Hôtel">
+                        <img src="/data/image/HotelBED.jpeg" alt="Espace détente de l'Hôtel">
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -144,7 +144,7 @@
                 </p>
             </div>
             <div>
-                <a href="Nos chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
+                <a href="../data/php/chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
             </div>
         </div>
     </main>

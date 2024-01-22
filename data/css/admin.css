@@ -1,0 +1,40 @@
+.boxinscription {
+    display: flex;
+    border: solid 0.5px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 8px;
+    padding: 10px;
+    background: linear-gradient(rgb(221, 255, 255), rgb(230, 255, 255), rgb(235, 255, 255));
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.boxinscription>input {
+    margin: 5px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    border: solid 0.5px;
+}
+
+.boxinscription>.btn_radio {
+    margin: 5px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    border: solid 0.5px;
+    background-color: white;
+}
+
+.boxinscription>input:focus {
+    outline: solid 2px rgb(175, 207, 250);
+    border: none;
+}
+
+.navbar .lien-nav ul li:nth-child(4) a {
+    display: flex;
+    color: blue;
+    border-bottom: solid 3px blue;
+    border-top: solid 3px transparent;
+}

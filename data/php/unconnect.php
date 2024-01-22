@@ -6,7 +6,7 @@ $_SESSION = array(); // détruit toute les valeurs de session
 
 session_destroy();
 
-header("Location: Page d'Acceuil.php");
+header("Location: /index.php");
 exit();
 
 ?>
