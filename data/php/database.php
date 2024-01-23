@@ -28,7 +28,7 @@ $query = getDB()->query("INSERT INTO user (nom, prenom, mail, password, admin) V
 // créer une table chambre avec des données prédéfinit. 
 
 
-$query=getDB()->query("DROP TABLE room");
+// $query=getDB()->query("DROP TABLE room");
 
 $query=getDB()->query("CREATE TABLE IF NOT EXISTS room(
     `id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -42,7 +42,7 @@ $query=getDB()->query("CREATE TABLE IF NOT EXISTS room(
     )
 ");
 
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('101', '13', '150', '2', '2','0', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('102', '20', '200', '3', '1','1', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('201', '30', '300', '6', '2','2', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('103', '15', '120', '1', '1','0', '1')");
+// $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('101', '13', '150', '2', '2','0', '1')");
+// $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('102', '20', '200', '3', '1','1', '1')");
+// $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('201', '30', '300', '6', '2','2', '1')");
+// $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('103', '15', '120', '1', '1','0', '1')");
