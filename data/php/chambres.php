@@ -139,7 +139,7 @@
                     <br>
                     Nombre de lit simple : ' . $room['nb_lit_simple'].'
                     <br>
-                    <form action="rooom.php" method="post">
+                    <form action="reserver.php" method="post">
                         <br>
                         <input type="hidden" name="reserve" value="' . $room['num_chambre'] . '">
                         <input type="submit" value="Réservez" name=reservee id="reservation">   
@@ -148,13 +148,6 @@
             </div> 
                 <br><br>
             ');
-
-        //     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reserve']) && $_POST['reserve'] == $room['num_chambre']) {
-        //         $numch=$room['num_chambre'];
-        //         $query = getDB()->query("UPDATE room SET disponible = '0' WHERE num_chambre = $numch ");
-        //         header('Location:chambres.php?reussi');
-                
-        //     }
         }
         
         ?>

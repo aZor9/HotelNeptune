@@ -49,7 +49,7 @@ if ($userData) {
         $_SESSION['admin']=true;
     }
         
-    header('Location:/data/php/connexion.php?good=identification');
+    header('Location:/data/php/connexion.php?good=connexion');
 
 } else {
     header('Location:/data/php/connexion.php?error=identification');

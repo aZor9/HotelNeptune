@@ -66,12 +66,8 @@
                 <li><a>MENU</a>
                     <ul>
                         <li></li>
-                        <li><a href="/data/php/unconnect.php">deco</a></li>
-                        <li><a>je</a></li>
-                        <li><a>sais</a></li>
-                        <li><a>pas</a></li>
-                        <li><a>quoi</a></li>
-                        <li><a>mettre</a></li>
+                        <li><a href="/data/php/unconnect.php">DECO </a></li>
+                        <li><a href="/data/php/init_chambre.php">RESET </a></li>
                     </ul>
                 </li>
             </ul>

@@ -1,8 +1,5 @@
 <?php  
-
 session_start();
-
-
 $num_chambre = $_POST['num_chambre'];
 $surface = $_POST['surface'];
 $prix = $_POST['prix'];

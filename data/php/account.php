@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>MON COMPTE</title>
@@ -13,32 +12,40 @@
 </head>
 
 <header>
-<?php
-    include('navbar.php');
-?>
+    <?php
+        include('navbar.php');
+        include('database.php');
+    ?>
 </header>
 
 <body>
-<?php
-session_start();
-if($_GET['good'] == "connexion"){
-    echo '<div class="good">Connexion réussite : BIENVENUE</div>';
-}
-?>
+    <?php
+    session_start();
+    if($_GET['good'] == "connexion"){
+        echo '<div class="good">Connexion réussite : BIENVENUE</div>';
+    }
+    ?>
 
-<br>  
-<h1>VOICI LES INFORMATIONS RELATIVES A VOTRE COMPTE</h1>
-<br><br>
-    <div class="compte">
-        <p>Nom :<?php echo(' '.$_SESSION['Nom']) ?> </p>
-        <p>Prénom :<?php echo(' '.$_SESSION['Prenom']) ?> </p>
-        <p>Mail :<?php echo(' '.$_SESSION['mail']) ?> </p> 
-        <?php
-        if ($_SESSION['admin']==true){
-            echo ("<p>Statue : ADMIN </p>");
-        }
-        ?>
-    </div>
+    <br>  
+    <h1>VOICI LES INFORMATIONS RELATIVES A VOTRE COMPTE</h1>
+    <br><br>
+        <div class="compte">
+            <p>Nom :<?php echo(' '.$_SESSION['Nom']) ?> </p>
+            <p>Prénom :<?php echo(' '.$_SESSION['Prenom']) ?> </p>
+            <p>Mail :<?php echo(' '.$_SESSION['mail']) ?> </p> 
+            <?php
+            if ($_SESSION['admin']==true){
+                echo ("<p>Statut : ADMIN </p>");
+            }
+            $mail=$_SESSION['mail'];
+            $query = getDB()->prepare("SELECT solde FROM user WHERE mail = :mail");
+            $query->bindParam(':mail', $mail, PDO::PARAM_STR);
+            $query->execute();
+            $solde = $query->fetch(PDO::FETCH_ASSOC);
+            $solde=$solde['solde'];
+            ?>
+            <p>Votre solde : <?php echo($solde) ?> </p> 
+        </div>
 
 </body>
 </html>
