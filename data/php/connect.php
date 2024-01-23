@@ -4,7 +4,7 @@ $mail = $_POST['mail'];
 $password = $_POST['pwd'];
 
  
-include ('../php/database.php');
+include('database.php');
 
 
 $query = getDB()->prepare("SELECT * FROM user WHERE mail = :mail AND password = :password");

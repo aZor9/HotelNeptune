@@ -7,7 +7,7 @@ session_start();
 <title>MON COMPTE</title>
 
 <head>
-    <link rel="stylesheet" href="../css/account.css">
+    <link rel="stylesheet" href="/data/css/account.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap"
@@ -17,7 +17,7 @@ session_start();
 
 <header>
 <?php
-    include ('../php/navbar.php');
+    include('navbar.php');
 ?>
 </header>
 

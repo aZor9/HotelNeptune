@@ -6,7 +6,7 @@ $mail = $_POST['mail'];
 $password = $_POST['pwd'];
 $repassword = $_POST['repwd'];
 
-include ('../php/database.php');
+include('database.php');
 
 if ($password!==$repassword){
     header('Location:/data/php/utilisateurs.php?error=errorpwd');

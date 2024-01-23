@@ -2,7 +2,7 @@
 <title>ACCEUIL</title>
 
 <head>
-    <link rel="stylesheet" href="../data/css/index.css">
+    <link rel="stylesheet" href="/data/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap"
@@ -13,7 +13,7 @@
 </head>
 <header>
 <?php
-    include ('../data/php/navbar.php');
+    include('data/php/navbar.php');
 ?>
 </header>
 
@@ -144,7 +144,7 @@
                 </p>
             </div>
             <div>
-                <a href="../data/php/chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
+                <a href="/data/data/php/chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
             </div>
         </div>
     </main>

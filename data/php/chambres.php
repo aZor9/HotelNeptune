@@ -3,13 +3,13 @@
 <title>Nos Chambres</title>
 
 <head>
-    <link rel="stylesheet" href="../css/chambres.css">
+    <link rel="stylesheet" href="/data/css/chambres.css">
 </head>
 
 <header>
     <?php
-    include('../php/navbar.php');
-    include('../php/database.php');
+    include('navbar.php');
+    include('database.php');
     session_start();
     ?>
 </header>

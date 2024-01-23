@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <title>Connexion</title>
 <head>
-    <link rel="stylesheet" href="../css/connexion.css">
+    <link rel="stylesheet" href="/data/css/connexion.css">
 
 </head>
 <header>
 <?php
-    include ('../php/navbar.php');
+    include('navbar.php');
     session_start();
     if($_GET['error'] == "identification")
     {
@@ -23,7 +23,7 @@
         <br>
         <h1>SE CONNECTER</h1>
             <br>
-        <form action="../php/connect.php" method="post">
+        <form action="/data/php/connect.php" method="post">
             <div class="boxinscription" action="POST">
                 <input type="text" id="mail" placeholder="Adresse mail" name="mail" required>
                 <input type="password" id="password" placeholder="Mot de passe" name="pwd" required>

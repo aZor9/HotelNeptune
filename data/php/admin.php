@@ -7,7 +7,7 @@ session_start();
 <title>ADMIN</title>
 
 <head>
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="/data/css/admin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap"
@@ -17,11 +17,11 @@ session_start();
 
 <header>
 <?php
-    include ('../php/navbar.php');
+    include('navbar.php');
 ?>
 </header>
 
 <body>
     je te laisse faire t baille d'admin ici
-    <a href="../php/add_room.php"> add room</a>
+    <a href="/data/php/add_room.php"> add room</a>
 </body>
