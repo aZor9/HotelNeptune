@@ -85,7 +85,6 @@
     <div class='avant-box' style="display:flex; flex-direction:row; flex-wrap: wrap;" >
         <?php
 
-        $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY num_chambre ASC");
 
         if (isset($_POST["prix"])) {
             $choix = $_POST["prix"];
@@ -102,7 +101,7 @@
                 $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND prix > $prixX ORDER BY prix ASC");
             }
         }
-        if (isset($_POST["capacite"])) {
+        elseif (isset($_POST["capacite"])) {
             $choix = $_POST["capacite"];
 
             if ($choix == "CAP") {
@@ -116,6 +115,9 @@
                 $cap = $_POST["capX"];
                 $query = getDB()->query("SELECT * FROM room WHERE disponible=1 AND nb_personne > $cap ORDER BY nb_personne ASC");
             }
+        }
+        else { 
+            $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY num_chambre ASC");
         }
 
         $rooms = $query->fetchAll(PDO::FETCH_ASSOC);
