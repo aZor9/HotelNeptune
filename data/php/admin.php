@@ -20,8 +20,11 @@ session_start();
     include('navbar.php');
 ?>
 </header>
-
+<br><br>
 <body>
-    je te laisse faire t baille d'admin ici
-    <a href="/data/php/add_room.php"> add room</a>
+    <div class='boxinscription', style='text-align:center;'><br>
+    <a href="/data/php/add_room.php"> add room</a><br>
+    <a href="/data/php/remove_room.php"> remove room</a><br>
+    <a href="/data/php/edit.php"> modifier room</a><br>
+    </div>
 </body>

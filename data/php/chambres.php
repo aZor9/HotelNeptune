@@ -18,7 +18,9 @@
 </header>
 
 <body>
-    <div style="display:flex; justify-content: center; margin:30px 0;">
+
+    <div style="height:100px" ></div>
+    <div style="display:flex; justify-content:center; margin:30px 0;">
         <div class="menu">
             <ul>
                 <li><a>TRIER : </a></li>
@@ -85,7 +87,7 @@
         </div>
     </div>
     <br>
-    <div class='avant-box' style="display:flex; flex-direction:row; flex-wrap: wrap;" >
+    <div class='avant-box' style="display:flex; text-align:center; justify-content:center; flex-wrap: wrap;" >
         <?php
 
 

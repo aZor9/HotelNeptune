@@ -18,9 +18,6 @@
     if (!$_SESSION['mail']){
         header('Location:/data/php/chambres.php?error=noaccount');
     }
-    if($_GET['error'] == "noaccount"){
-        echo '<div class="error">Erreur : Mail déja existant </div> <br>';
-    }
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reserve'])) {
         $numch=$_POST['reserve'];
         echo($numch);
@@ -31,7 +28,7 @@
     $room = $query->fetch(PDO::FETCH_ASSOC);
         echo ('
             <br><br>
-            <div style="display:flex; flex-direction:column;  ">
+            <div style="display:flex; text-align:center; justify-content:center; ">
                 <div class="box">
                     <br>    
                     <b>CONFIRMEZ CETTE RESERVATION</b>
