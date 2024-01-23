@@ -142,7 +142,7 @@
                     <form action="rooom.php" method="post">
                         <br>
                         <input type="hidden" name="reserve" value="' . $room['num_chambre'] . '">
-                        <input type="submit" value="Réservez" name=reserve id="reservation">   
+                        <input type="submit" value="Réservez" name=reservee id="reservation">   
                     </form>
                 </div>
             </div> 

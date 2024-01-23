@@ -24,3 +24,4 @@ else {header('Location:chambres.php?aaaa');}
 // header('Location:/data/php/chambres.php?reussi');
     
 
+?>
