@@ -10,7 +10,16 @@
     <?php
     include('navbar.php');
     include('database.php');
-    ?>
+    session_start();
+    if($_GET['error'] == "probleme")
+    {
+        echo '<div class="error">Erreur</div>';
+    }
+    if($_GET['good'] == "reussi")
+    {
+        echo '<div class="good">Ajout de chambre réussi (normalement)</div>';
+    }
+?>
 </header>
 
 <body>
