@@ -144,7 +144,7 @@
                 </p>
             </div>
             <div>
-                <a href="/data/data/php/chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
+                <a href="/data/php/chambres.php" id="reservationacceuil">Obtenir une Réservation</a>
             </div>
         </div>
     </main>
