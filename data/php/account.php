@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <!DOCTYPE html>
 <html>
@@ -22,6 +19,13 @@ session_start();
 </header>
 
 <body>
+<?php
+session_start();
+if($_GET['good'] == "connexion"){
+    echo '<div class="good">Connexion réussite : BIENVENUE</div>';
+}
+?>
+
 <br>  
 <h1>VOICI LES INFORMATIONS RELATIVES A VOTRE COMPTE</h1>
 <br><br>

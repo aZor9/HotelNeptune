@@ -15,7 +15,7 @@
     }
     if($_GET['good'] == "connexion")
     {
-        echo '<div class="good">Connexion réussite : BIENVENUE</div>';
+        header('Location:/data/php/account.php?good=connexion');
     }
 ?>
 </header>

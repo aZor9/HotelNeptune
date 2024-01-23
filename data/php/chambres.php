@@ -80,8 +80,15 @@
         </div>
     </div>
     <br>
-    <div style="display:flex; flex-direction:row; flex-wrap: wrap;" >
+    <div class='avant-box' style="display:flex; flex-direction:row; flex-wrap: wrap;" >
         <?php
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reserve'])) {
+            $num_chambre_reserve = $_POST['reserve']; // Numéro de chambre à réserver
+
+        // Mettre à jour la disponibilité pour la chambre spécifiée
+            $query = getDB()->query("UPDATE room SET disponible = '0' WHERE num_chambre = $num_chambre_reserve");
+        }
 
         $query = getDB()->query("SELECT * FROM room WHERE disponible=1 ORDER BY num_chambre ASC");
 
@@ -118,23 +125,28 @@
 
         $rooms = $query->fetchAll(PDO::FETCH_ASSOC);
 
+        
         foreach ($rooms as $room) {
             echo ('
             <br><br>
-            <div class="box">
-                Numéro de chambre : ' . $room['num_chambre'] . '
-                <br>
-                Surface : ' . $room['surface'] . ' m²
-                <br>
-                Prix : ' . $room['prix'] . ' € par nuit
-                <br>
-                Nombre de personnes : ' . $room['nb_personne'] . '
-                <br>
-                Nombre de lit double : ' . $room['nb_lit_double'] . '
-                <br>
-                Nombre de lit simple : ' . $room['nb_lit_simple'] . '
-            </div>  
-            <br><br>');
+            
+                <div class="box">
+                    Numéro de chambre : ' . $room['num_chambre'] . '
+                    <br>
+                    Surface : ' . $room['surface'] . ' m²
+                    <br>
+                    Prix : ' . $room['prix'] . ' € par nuit
+                    <br>
+                    Nombre de personnes : ' . $room['nb_personne'] . '
+                    <br>
+                    Nombre de lit double : ' . $room['nb_lit_double'] . '
+                    <br>
+                    Nombre de lit simple : ' . $room['nb_lit_simple'].'
+                    <br>
+                    
+                </div>  
+            <br><br>
+            ');
         }
         ?>
     </div>
