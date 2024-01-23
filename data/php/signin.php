@@ -22,7 +22,7 @@ foreach ($emails as $email){
         exit; 
     }
 } 
-$query = getDB()->query("INSERT INTO user (nom, prenom, mail, password, admin) VALUES('$nom', '$prenom', '$mail', '$password', '0', '0')");
+$query = getDB()->query("INSERT INTO user (nom, prenom, mail, password, solde, admin) VALUES('$nom', '$prenom', '$mail', '$password', '0', '0')");
 
 
 session_start();

@@ -11,6 +11,9 @@
     include('navbar.php');
     include('database.php');
     session_start();
+    if($_GET['error'] == "noaccount"){
+        echo '<div class="error">Erreur : Vous devez avoir un compte pour réserver </div> <br>';
+    }
     ?>
 </header>
 

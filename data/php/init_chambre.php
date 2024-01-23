@@ -33,7 +33,7 @@ $query=getDB()->query("CREATE TABLE IF NOT EXISTS room(
 $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('101', '13', '150', '2', '2','0', '1')");
 $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('102', '20', '200', '3', '1','1', '1')");
 $query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('201', '30', '300', '6', '2','2', '1')");
-$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('103', '15', '120', '1', '1','0', '1')");
+$query = getDB()->query("INSERT INTO room (num_chambre, surface, prix, nb_personne, nb_lit_simple, nb_lit_double, disponible) VALUES('103', '15', '120', '2', '0','1', '1')");
 
 header('Location:../../index.php?initalisé');
 exit();
