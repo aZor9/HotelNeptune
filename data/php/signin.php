@@ -24,9 +24,20 @@ foreach ($emails as $email){
 } 
 $query = getDB()->query("INSERT INTO user (nom, prenom, mail, password, solde, admin) VALUES('$nom', '$prenom', '$mail', '$password', '0', '0')");
 
+$query = getDB()->prepare("SELECT id FROM user WHERE mail = :mail");
+$query->bindParam(':mail', $mail, PDO::PARAM_STR);
+$query->execute();
+
+$id = $query->fetch(PDO::FETCH_ASSOC);
+$query = getDB()->prepare("SELECT solde FROM user WHERE mail = :mail");
+$query->bindParam(':mail', $mail, PDO::PARAM_STR);
+$query->execute();
+$solde = $query->fetch(PDO::FETCH_ASSOC);
+
 
 session_start();
-
+$_SESSION['solde']=$solde['solde'];
+$_SESSION['id']=$id['id'];
 $_SESSION['mail']=$mail;
 $_SESSION['pwd']=$password;
 $_SESSION['Nom']=$nom;

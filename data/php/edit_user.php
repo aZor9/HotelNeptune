@@ -37,7 +37,7 @@ if ($_SESSION['admin']==true){
         Mot de passe de l'utilisateur :
         <input type="text "  placeholder="Mot de passe de l'utilisateur" name=password value="<?php echo( $user['password'] ); ?>" required>
         solde :
-        <input type="smallint "  placeholder="Admin" name=solde value="<?php echo( $user['solde'] ); ?>" required>
+        <input type="smallint "  placeholder="solde" name=solde value="<?php echo( $user['solde'] ); ?>" required>
         Admin (1=oui / 0=non) :
         <input type="smallint "  placeholder="Admin" name=password value="<?php echo( $user['admin'] ); ?>" required>
 

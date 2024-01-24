@@ -29,23 +29,39 @@
     <br>  
     <h1>VOICI LES INFORMATIONS RELATIVES A VOTRE COMPTE</h1>
     <br><br>
+    <div class="compte">
+        <!--<p>id :<?php //echo(' '.$_SESSION['id']) ?> </p>-->
+        <p>Nom :<?php echo(' '.$_SESSION['Nom']) ?> </p>
+        <p>Prénom :<?php echo(' '.$_SESSION['Prenom']) ?> </p>
+        <p>Mail :<?php echo(' '.$_SESSION['mail']) ?> </p> 
+        <?php
+        if ($_SESSION['admin']==true){
+            echo ("<p>Statut : ADMIN </p>");
+        }
+        $mail=$_SESSION['mail'];
+        $query = getDB()->prepare("SELECT solde FROM user WHERE mail = :mail");
+        $query->bindParam(':mail', $mail, PDO::PARAM_STR);
+        $query->execute();
+        $solde = $query->fetch(PDO::FETCH_ASSOC);
+        $solde=$solde['solde'];
+        // $query = getDB()->query("SELECT id FROM user WHERE mail = $mail");
+        // $id = $query->fetch(PDO::FETCH_ASSOC);
+        ?>
+        <p>Votre solde : <?php echo($solde) ?> </p> 
+    </div>
+    <br><br>
+    <form action="/data/php/ajouter_argent.php" method="post" style='text-align:center'>
         <div class="compte">
-            <p>Nom :<?php echo(' '.$_SESSION['Nom']) ?> </p>
-            <p>Prénom :<?php echo(' '.$_SESSION['Prenom']) ?> </p>
-            <p>Mail :<?php echo(' '.$_SESSION['mail']) ?> </p> 
-            <?php
-            if ($_SESSION['admin']==true){
-                echo ("<p>Statut : ADMIN </p>");
-            }
-            $mail=$_SESSION['mail'];
-            $query = getDB()->prepare("SELECT solde FROM user WHERE mail = :mail");
-            $query->bindParam(':mail', $mail, PDO::PARAM_STR);
-            $query->execute();
-            $solde = $query->fetch(PDO::FETCH_ASSOC);
-            $solde=$solde['solde'];
-            ?>
-            <p>Votre solde : <?php echo($solde) ?> </p> 
+            Ajouter au solde :
+            <input type="smallint "  placeholder="solde" name=solde required>
+            <br>
+            <div class="text-center" style='margin-left:auto;margin-right:auto;'>
+                <input style='text-align:center'  id="reservation" value="Mettre a jour"> <!-- type="submit" id réutilisé, a changer-->
+            </div>            
         </div>
+        </div>
+    </form>
+
 
 </body>
 </html>
