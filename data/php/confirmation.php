@@ -28,7 +28,11 @@ if ($num_ch) {
     echo('solde après opération : '.$transaction);
     echo('<br>');
     echo(' le mail : '.$_SESSION['mail']);
-    //$query = getDB()->query("UPDATE user SET solde=$transaction WHERE mail = '$mail' ");
+    $query = getDB()->prepare("UPDATE user SET solde = :transaction WHERE mail = :mail");
+    $query->execute([
+        'mail' => $mail,
+        'transaction' => $transaction,
+    ]);
 
     //header('Location:/index.php?reservation=ok');
 

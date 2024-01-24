@@ -20,8 +20,8 @@
     }
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reserve'])) {
         $numch=$_POST['reserve'];
-        echo($numch);
-        echo(' '.$_SESSION['mail']);
+        //echo($numch); //test de valeur 
+        //echo(' '.$_SESSION['mail']);  //test de valeur
     }
     
     $query = getDB()->query("SELECT * FROM room WHERE num_chambre =$numch ");
