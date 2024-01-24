@@ -25,11 +25,8 @@
             <h1>Bienvenue à l'Hôtel Neptune</h1>
             <p>
                 Découvrez l'élégance ultime et le confort incomparable à l'Hôtel Neptune, une oasis de luxe
-                nichée
-                au
-                cœur d'un
-                paysage spectaculaire.
-
+                nichée au cœur d'un paysage spectaculaire, situé à Menton sur la Côte d'Azur.
+                <br>
                 Que vous voyagiez pour affaires ou pour le plaisir, notre hôtel offre une
                 expérience inoubliable alliant sophistication, style et service exceptionnel.
             </p>
