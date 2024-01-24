@@ -78,3 +78,18 @@ div.error {
     background-color: blue;
     color: white;
 }
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.5px;
+    border-color: rgb(68, 68, 68);
+    border-radius: 8px;
+    padding: 10px;
+    background: linear-gradient(rgb(221, 255, 255), rgb(230, 255, 255), rgb(235, 255, 255));
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px ;
+    width: 300px;
+}
