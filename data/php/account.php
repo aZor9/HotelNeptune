@@ -56,7 +56,7 @@
             <input type="smallint "  placeholder="solde" name=solde required>
             <br>
             <div class="text-center" style='margin-left:auto;margin-right:auto;'>
-                <input style='text-align:center'  id="reservation" value="Mettre a jour"> <!-- type="submit" id réutilisé, a changer-->
+                <input type="submit" style='text-align:center'  id="reservation" value="Mettre a jour"> <!-- type="submit" id réutilisé, a changer-->
             </div>            
         </div>
         </div>
