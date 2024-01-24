@@ -95,8 +95,9 @@ h1 {
 
 .BHN>.text>* {
     max-width: 700px;
-    color: blue;
+    color: rgb(255, 255, 255);
 }
+
 
 .text {
     display: flex;
@@ -111,6 +112,13 @@ h1 {
     text-align: center;
 }
 
+header {
+    max-height: 25vh;
+    position: fixed;/*sa suit le scroll */
+    top: 0;
+    width: 100%; 
+    z-index: 1000; /*sert a choisir la prioriter de placement */
+}
 
 #HotelBHN {
     height: 80%;
