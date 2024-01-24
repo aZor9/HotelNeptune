@@ -12,49 +12,37 @@ session_start();
 include('database.php');
 
 if ($_SESSION['admin']==true){
-    echo('aa');
     if ($_POST['user'])
     {
         $id_user = $_POST['user'];
-        $query = getDB()->query("SELECT id FROM 'user'");
-        $users = $query->fetchAll(PDO::FETCH_COLUMN);
-        foreach ($users as $user){
-            if ($id_user==$user){
-                $query = getDB()->query("DELETE FROM user WHERE id = $id_user "); 
-                header('Location:/data/php/user_admin.php?good=suppresion');
-                exit();
-            }
-        } 
-        header('Location:/data/php/user_admin.php?error=suppresion'); // l'id user n'existe pas
-    }
-}
+        $query = getDB()->prepare("SELECT * FROM user where id = :id");
+        $query->bindParam(':id', $id_user, PDO::PARAM_STR);
+        $query->execute();
+        $user = $query->fetch(PDO::FETCH_ASSOC);
+}}
 ?>
 
-<h1>MODIFIER UNE CHAMBRE</h1>
+<h1>MODIFIER UN UTILISATEUR</h1>
 <br>
-<form action="/data/php/maj_modif.php" method="post">
+<form action="/data/php/maj_modif_user.php" method="post">
     <div class="boxinscription">
-    Numéro de chambre :
-        <input type="smallint "  placeholder="Numéro de chambre" name=num_chambre value="<?php echo( $room['num_chambre'] ); ?>" required>
-        Surface en m² :
-        <input type="smallint "  placeholder="Surface en m²" name=surface value="<?php echo( $room['surface'] ); ?>" required>
-        Prix :
-        <input type="decimal "  placeholder="Prix" name=prix value="<?php echo( $room['prix'] ); ?>" required>
-        Nombre de lit simple :
-        <input type="smallint "  placeholder="Nombre de lit simple" name=nb_lit_simple value="<?php echo( $room['nb_lit_simple'] ); ?>" required>
-        Nombre de lit double :
-        <input type="smallint "  placeholder="Nombre de lit double" name=nb_lit_double value="<?php echo( $room['nb_lit_double'] ); ?>" required>
-        <div class="btn_radio" style="padding-left:10px; border: solid 0.5px;">
-            <?php echo('Anciennement : '. $room['disponible']. ' (1=dispo)' ); ?>
-            <br>
-            <input type="radio" id="dispo" name="dispo" value="dispo" checked />
-            <label for="huey">Disponnible</label>
-            <br>
-            <input type="radio" id="dispo" name="dispo" value="indispo" />
-            <label for="dewey">Indisponnible</label>
-        </div>
+        Id de l'utilisateur :
+        <input type="text "  placeholder="Id" name=id_user value="<?php echo( $user['id'] ); ?>" required>
+        Prénom de l'utilisateur :
+        <input type="text "  placeholder="Prénom" name=prenom value="<?php echo( $user['prenom'] ); ?>" required>
+        Nom de l'utilisateur :
+        <input type="text "  placeholder="Nom" name=name value="<?php echo( $user['nom'] ); ?>" required>
+        Email de l'utilisateur :
+        <input type="mail "  placeholder="Email de l'utilisateur" name=mail value="<?php echo( $user['mail'] ); ?>" required>
+        Mot de passe de l'utilisateur :
+        <input type="text "  placeholder="Mot de passe de l'utilisateur" name=password value="<?php echo( $user['password'] ); ?>" required>
+        solde :
+        <input type="smallint "  placeholder="Admin" name=solde value="<?php echo( $user['solde'] ); ?>" required>
+        Admin (1=oui / 0=non) :
+        <input type="smallint "  placeholder="Admin" name=password value="<?php echo( $user['admin'] ); ?>" required>
+
         <div class="text-center">
-            <input type="submit" id="reservation" value="Mettre a jour">
+            <input type="submit" id="reservation" value="Mettre a jour"> <!-- id réutilisé, a changer-->
         </div>            
     </div>
     </div>
