@@ -40,7 +40,7 @@ if($_GET['error'] == "probleme")
     <form method="get">
         <div class="boxinscription">
             <input type="smallint "  placeholder="Numéro de chambre" name=num_chambre required>
-            <div class="text-center">
+            <div style="display:flex; flex-direction:row; justify-content:center;">
                 <input type="submit" id="reservation" value="Modifier">
             </div>            
         </div>

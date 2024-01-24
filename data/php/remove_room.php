@@ -30,7 +30,7 @@
     <form action="/data/php/supprime_room.php" method="post">
         <div class="boxinscription">
             <input type="smallint "  placeholder="Numéro de chambre" name=num_chambre required>
-            <div class="text-center">
+            <div  style="display:flex; flex-direction:row; justify-content:center;">
                 <input type="submit" id="reservation" value="Supprimer">
             </div>            
         </div>

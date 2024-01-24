@@ -22,10 +22,14 @@ session_start();
 </header>
 <br><br>
 <body>
-    <div class='boxinscription', style='text-align:center;'><br>
-    <a href="/data/php/add_room.php"> add room</a><br>
-    <a href="/data/php/remove_room.php"> remove room</a><br>
-    <a href="/data/php/edit.php"> modifier room</a><br><br><br>
-    <a href="/data/php/user_admin.php"> Utilisateur</a><br>
+    <div class='boxinscription' style='text-align:center;'><br>
+        
+        <div class="button"><a href="/data/php/add_room.php">Ajouter une chambre</a><br></div>
+               
+        <div class="button"><a href="/data/php/remove_room.php">Supprimer une chambre</a><br></div>
+        
+        <div class="button"><a href="/data/php/edit.php">Modifier une chambre</a><br></div>
+        
+        <div class="button"><a href="/data/php/user_admin.php">Gestions des utilisateurs</a><br></div>
     </div>
 </body>

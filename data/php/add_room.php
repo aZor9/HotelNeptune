@@ -44,7 +44,7 @@
                 <input type="radio" id="dispo" name="dispo" value="indispo" />
                 <label for="dewey">Indisponnible</label>
             </div>
-            <div class="text-center">
+            <div  style="display:flex; flex-direction:row; justify-content:center;">
                 <input type="submit" id="reservation" value="Ajouter">
             </div>            
         </div>

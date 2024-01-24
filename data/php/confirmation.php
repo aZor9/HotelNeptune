@@ -34,7 +34,7 @@ if ($num_ch) {
         'transaction' => $transaction,
     ]);
 
-    //header('Location:/index.php?reservation=ok');
+    header('Location:/index.php?reservation=ok');
 
 
 }
