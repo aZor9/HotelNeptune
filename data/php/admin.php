@@ -29,7 +29,13 @@ session_start();
         <div class="button"><a href="/data/php/remove_room.php">Supprimer une chambre</a><br></div>
         
         <div class="button"><a href="/data/php/edit.php">Modifier une chambre</a><br></div>
+        <br>
+    </div><br>
+    <div class='boxinscription' style='text-align:center;'><br>
         
         <div class="button"><a href="/data/php/user_admin.php">Gestions des utilisateurs</a><br></div>
+        
+        <div class="button"><a href="/data/php/chambre_reserve.php">Voir les chambres reservées</a><br></div>
+        <br>
     </div>
 </body>

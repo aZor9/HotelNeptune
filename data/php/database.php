@@ -1,7 +1,7 @@
 <?php
 
 function getDB () { // se connecte à la base de donnée
-    return new PDO('sqlite:C:\Users\aurel\OneDrive\Documents\PROJET\HotelNeptune\data\database\database_', '', '',[PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
+    return new PDO('sqlite:C:\Users\hugol\Downloads\EPSI (2)\HotelNeptune\data\database\database_', '', '',[PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
 }
 
 //créer une table USER avec des données prédéfinit.
