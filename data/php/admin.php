@@ -25,6 +25,7 @@ session_start();
     <div class='boxinscription', style='text-align:center;'><br>
     <a href="/data/php/add_room.php"> add room</a><br>
     <a href="/data/php/remove_room.php"> remove room</a><br>
-    <a href="/data/php/edit.php"> modifier room</a><br>
+    <a href="/data/php/edit.php"> modifier room</a><br><br><br>
+    <a href="/data/php/user_admin.php"> Utilisateur</a><br>
     </div>
 </body>

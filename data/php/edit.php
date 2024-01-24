@@ -13,7 +13,7 @@ session_start();
 
 if($_GET['num_chambre'])
 {
-    echo '<div class="good">Modification de chambre réussi (normalement)</div>';
+    echo ('<div class="good">Modification de chambre réussi (normalement)</div>');
     $num_chambre = $_GET['num_chambre'];
     $query = getDB()->query("SELECT num_chambre FROM 'room'");
     $rooms = $query->fetchAll(PDO::FETCH_COLUMN);

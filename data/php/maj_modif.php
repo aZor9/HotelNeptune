@@ -14,9 +14,9 @@
         
 
         $num_chambre = $_POST['num_chambre']; 
-        echo('aa'); 
+        
         $query = getDB()->query("DELETE FROM room WHERE num_chambre = $num_chambre "); //supprime l'ancienne donnée
-        echo('aa'); 
+         
             $num_chambre = $_POST['num_chambre']; //mise a jour de l'ancienne donnée :
             $surface = $_POST['surface'];
             $prix = $_POST['prix'];
